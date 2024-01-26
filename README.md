@@ -18,3 +18,13 @@ O terceiro notebook, visualizacao_de_dados.ipynb, acessa os dados tratados no Bl
 Toda a orquestração do fluxo de trabalho é realizada pelo Azure Data Factory. O arquivo etl_pipeline.json garantem a execução sequencial e automática dos notebooks em cada etapa do projeto, (extração, tratamento e visualização).
 
 ### Tecnologias, Linguagens e Bibliotecas Utilizadas
+  <div style="display: flex; flex-direction: row;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Descrição da Imagem" width="40">
+  <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/microsoft_azure_logo_icon_168977.png" width="100">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png" width="100">     
+  <img src="https://miro.medium.com/v2/resize:fit:975/0*IOGNRnuhopjfGQzl.png" width="100"> 
+  <img src="https://securiti.ai/wp-content/uploads/2023/03/microsoft-azure-blob-storage-logo.com_.webp" width="120">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/2560px-Pandas_logo.svg.png" width="100">
+  <img src="https://matplotlib.org/stable/_images/sphx_glr_logos2_003.png" width="120">
+   <img src="https://seaborn.pydata.org/_images/logo-wide-lightbg.svg" width="135">
+</div>
