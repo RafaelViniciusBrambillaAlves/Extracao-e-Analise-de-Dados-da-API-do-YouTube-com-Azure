@@ -4,11 +4,15 @@ Este projeto envolve a extração e análise de dados dos 50 vídeos mais popula
 
 ### Bronze
 Extração de Dados com YouTube API e Armazenamento no Blob "bronze"
-O primeiro notebook, coleta_de_dados.ipynb, utiliza a API do YouTube para coletar dados brutos dos 50 vídeos mais populares no Brasil. Os dados são armazenados em um Blob Storage chamado "bronze" na Azure. Os dados estão salvo no formato .csv como no exemplo na pasta 'blob_bronze'.
+O primeiro notebook, coleta_de_dados.ipynb, utiliza a API do YouTube para coletar dados brutos em formato .json dos 50 vídeos mais populares no Brasil. Os dados são armazenados em um Blob Storage chamado "bronze" na Azure. Os dados estão salvo no formato .csv de exemplo na pasta 'blob_bronze'.
 
 ### Silver
 Pré-processamento com Pandas e Armazenamento no Blob "silver"
 O segundo notebook, tratamento_de_dados.ipynb, acessa os dados brutos no Blob "bronze". Utilizando a biblioteca Pandas, realizamos tarefas de pré-processamento, incluindo exclusão de colunas desnecessárias, formatação de colunas e renomeação. O resultado é salvo no Blob "silver".  Os dados estão salvo no formato .csv como no exemplo na pasta 'blob_silver'.
+
+ Para o tratamento desses dados, foram excluido 28 colunas que não precisavam ser usadas, ouve a formatação e padronização de algumas colunas, divisão de dia e horário da publicação dos videos, criação do link completo para acessar os videos, padronização da duração dos vídeos para minutos e renomeação das colunas. 
+ Esse é o resultado:
+ 
 
 ### Gold
 Análise e Visualização no Databricks, com Salvamento no Blob "gold"
