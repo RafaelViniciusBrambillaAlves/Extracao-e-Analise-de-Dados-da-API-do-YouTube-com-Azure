@@ -15,4 +15,4 @@ Análise e Visualização no Databricks, com Salvamento no Blob "gold"
 O terceiro notebook, visualizacao_de_dados.ipynb, acessa os dados tratados no Blob "silver". Utilizando as capacidades de visualização e análise do Databricks, realizamos análises exploratórias e geramos gráficos que fornecem insights sobre os vídeos. Os gráficos são salvos em uma pasta no Blob "gold".
 
 ## Orquestração com Azure Data Factory
-Toda a orquestração do fluxo de trabalho é realizada pelo Azure Data Factory. Os pipelines bronze_pipeline, silver_pipeline e gold_pipeline garantem a execução sequencial e automática dos notebooks em cada etapa do projeto.
+Toda a orquestração do fluxo de trabalho é realizada pelo Azure Data Factory. O arquivo etl_pipeline.json garantem a execução sequencial e automática dos notebooks em cada etapa do projeto, (extração, tratamento e visualização).
