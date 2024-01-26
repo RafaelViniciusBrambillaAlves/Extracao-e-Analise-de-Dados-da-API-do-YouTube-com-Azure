@@ -2,19 +2,40 @@
 
 Este projeto envolve a extração e análise de dados dos 50 vídeos mais populares do YouTube Brasil, utilizando a API do YouTube. As etapas são executadas em notebooks do Databricks, com armazenamento e orquestração na plataforma Azure.
 
-### Bronze
+### Bronze 🥉
 Extração de Dados com YouTube API e Armazenamento no Blob "bronze"
 O primeiro notebook, coleta_de_dados.ipynb, utiliza a API do YouTube para coletar dados brutos em formato .json dos 50 vídeos mais populares no Brasil. Os dados são armazenados em um Blob Storage chamado "bronze" na Azure. Os dados estão salvo no formato .csv de exemplo na pasta 'blob_bronze'.
 
-### Silver
+### Silver 🥈
 Pré-processamento com Pandas e Armazenamento no Blob "silver"
 O segundo notebook, tratamento_de_dados.ipynb, acessa os dados brutos no Blob "bronze". Utilizando a biblioteca Pandas, realizamos tarefas de pré-processamento, incluindo exclusão de colunas desnecessárias, formatação de colunas e renomeação. O resultado é salvo no Blob "silver".  Os dados estão salvo no formato .csv como no exemplo na pasta 'blob_silver'.
 
  Para o tratamento desses dados, foram excluido 28 colunas que não precisavam ser usadas, ouve a formatação e padronização de algumas colunas, divisão de dia e horário da publicação dos videos, criação do link completo para acessar os videos, padronização da duração dos vídeos para minutos e renomeação das colunas. 
  Esse é o resultado:
+
+ | Coluna                | Descrição                                      |
+|------------------------|-------------------------------------------------|
+| tipo                   | Tipo de objeto, indicando que é um vídeo do YouTube. |
+| id                     | Identificador único do vídeo.                   |
+| titulo                 | Título do vídeo.                                |
+| descricao              | Descrição do vídeo.                             |
+| thumbnails_png         | URLs das imagens thumbnails em formato PNG.     |
+| canal                  | Título do canal do YouTube.                     |
+| tags                   | Lista de tags associadas ao vídeo.              |
+| idioma                 | Idioma padrão do vídeo.                         |
+| duracao                | Duração do vídeo.                               |
+| definicao              | Definição do vídeo (por exemplo, HD).           |
+| visualizacoes          | Número de visualizações do vídeo.               |
+| likes                  | Número de curtidas no vídeo.                    |
+| comentarios            | Número de comentários no vídeo.                 |
+| Regioes_bloqueadas     | Regiões onde o vídeo está bloqueado.            |
+| dia                    | Data de publicação do vídeo.                    |
+| horario                | Horário de publicação do vídeo.                 |
+| link                   | Link para o vídeo no YouTube.                   |
+
  
 
-### Gold
+### Gold 🥇
 Análise e Visualização no Databricks, com Salvamento no Blob "gold"
 O terceiro notebook, visualizacao_de_dados.ipynb, acessa os dados tratados no Blob "silver". Utilizando as capacidades de visualização e análise do Databricks, realizamos análises exploratórias e geramos gráficos que fornecem insights sobre os vídeos. Os gráficos são salvos em uma pasta no Blob "gold".  Os graficos estão salvo no formato png como no exemplo na pasta 'blob_gold'.
 
