@@ -1,0 +1,84 @@
+{
+    "name": "etl_pipeline",
+    "properties": {
+        "activities": [
+            {
+                "name": "coleta_de_dados",
+                "type": "DatabricksNotebook",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Users/rafael.brambilla@outlook.com/coleta_de_dados"
+                },
+                "linkedServiceName": {
+                    "referenceName": "AzureDatabricks_LinkedService",
+                    "type": "LinkedServiceReference"
+                }
+            },
+            {
+                "name": "tratamento_de_dados",
+                "type": "DatabricksNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "coleta_de_dados",
+                        "dependencyConditions": [
+                            "Completed"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Users/rafael.brambilla@outlook.com/tratamento_de_dados"
+                },
+                "linkedServiceName": {
+                    "referenceName": "AzureDatabricks_LinkedService",
+                    "type": "LinkedServiceReference"
+                }
+            },
+            {
+                "name": "visualizacao_dos_dados",
+                "type": "DatabricksNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "tratamento_de_dados",
+                        "dependencyConditions": [
+                            "Completed"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Users/rafael.brambilla@outlook.com/visualizacao_dos_dados"
+                },
+                "linkedServiceName": {
+                    "referenceName": "AzureDatabricks_LinkedService",
+                    "type": "LinkedServiceReference"
+                }
+            }
+        ],
+        "annotations": [],
+        "lastPublishTime": "2024-01-22T14:01:27Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
