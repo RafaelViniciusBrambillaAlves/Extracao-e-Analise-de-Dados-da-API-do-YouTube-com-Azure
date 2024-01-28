@@ -39,8 +39,22 @@ O segundo notebook, tratamento_de_dados.ipynb, acessa os dados brutos no Blob "b
 Análise e Visualização no Databricks, com Salvamento no Blob "gold"
 O terceiro notebook, visualizacao_de_dados.ipynb, acessa os dados tratados no Blob "silver". Utilizando as capacidades de visualização e análise do Databricks, realizamos análises exploratórias e geramos gráficos que fornecem insights sobre os vídeos. Os gráficos são salvos em uma pasta no Blob "gold".  Os graficos estão salvo no formato png como no exemplo na pasta 'blob_gold'.
 
+Para a análise buscou-se responder 5 perguntas simples:
+1 - 
+
+2 - 
+
+3 - 
+
+4 - 
+
+5 - 
+
 ### Orquestração com Azure Data Factory
-Toda a orquestração do fluxo de trabalho é realizada pelo Azure Data Factory. O arquivo etl_pipeline.json garantem a execução sequencial e automática dos notebooks em cada etapa do projeto, (extração, tratamento e visualização).
+Toda a orquestração do fluxo de trabalho é realizada pelo Azure Data Factory. O arquivo etl_pipeline garantem a execução sequencial e automática dos notebooks em cada etapa do projeto, (extração, tratamento e visualização).
+
+A imagem abaixo mostra o fluxo do trabalho
+![image](https://github.com/RafaelViniciusBrambillaAlves/Extracao-e-Analise-de-Dados-da-API-do-YouTube-com-Azure/assets/128416211/ee08ed8e-48c7-4473-8336-34fa391b11d9)
 
 ### Tecnologias, Linguagens e Bibliotecas Utilizadas
   <div style="display: flex; flex-direction: row;">
