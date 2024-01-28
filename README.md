@@ -39,7 +39,8 @@ O segundo notebook, tratamento_de_dados.ipynb, acessa os dados brutos no Blob "b
 Análise e Visualização no Databricks, com Salvamento no Blob "gold"
 O terceiro notebook, visualizacao_de_dados.ipynb, acessa os dados tratados no Blob "silver". Utilizando as capacidades de visualização e análise do Databricks, realizamos análises exploratórias e geramos gráficos que fornecem insights sobre os vídeos. Os gráficos são salvos em uma pasta no Blob "gold".  Os graficos estão salvo no formato png como no exemplo na pasta 'blob_gold'.
 
-Para a análise buscou-se responder 5 perguntas simples:
+Para a análise buscou-se responder 5 perguntas simples, com os dados do dia 24 / 01 / 2024:
+
 1 - 
 
 2 - 
