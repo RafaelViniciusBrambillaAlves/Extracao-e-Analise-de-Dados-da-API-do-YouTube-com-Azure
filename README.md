@@ -41,15 +41,16 @@ O terceiro notebook, visualizacao_de_dados.ipynb, acessa os dados tratados no Bl
 
 Para a análise buscou-se responder 5 perguntas simples, com os dados do dia 24 / 01 / 2024:
 
-1 - 
+1 - Quais os melhores horários para postar vídeo?
 
-2 - 
+2 - Quais os canais com mais vídeos populares? 
 
-3 - 
+3 - Qual a melhor duração de vídeos para ser popular?
 
-4 - 
+4 - Quais são os canais com mais visualização?
 
-5 - 
+5 - Quais são os números de visualização do vídeos mais populares?
+
 
 ### Orquestração com Azure Data Factory
 Toda a orquestração do fluxo de trabalho é realizada pelo Azure Data Factory. O arquivo etl_pipeline garantem a execução sequencial e automática dos notebooks em cada etapa do projeto, (extração, tratamento e visualização).
