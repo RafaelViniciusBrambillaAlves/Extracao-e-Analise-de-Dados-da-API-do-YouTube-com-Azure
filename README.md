@@ -41,15 +41,41 @@ O terceiro notebook, visualizacao_de_dados.ipynb, acessa os dados tratados no Bl
 
 Para a análise buscou-se responder 5 perguntas simples, com os dados do dia 24 / 01 / 2024:
 
-1 - Quais os melhores horários para postar vídeo?
+1 - Quais são os horários com os vídeos mais populares?
+  <div style="display: flex; flex-direction: row;">
+   <img src="https://github.com/RafaelViniciusBrambillaAlves/Extracao-e-Analise-de-Dados-da-API-do-YouTube-com-Azure/assets/128416211/88acce68-30e9-49fa-83a0-b5c6181fdec8" width="400">
+</div>
 
-2 - Quais os canais com mais vídeos populares? 
+- O horário mais popular nesse dia é entre 14 e 16 horas
 
-3 - Qual a melhor duração de vídeos para ser popular?
+2 - Quais os canais com vídeos mais populares? 
+  <div style="display: flex; flex-direction: row;">
+   <img src="https://github.com/RafaelViniciusBrambillaAlves/Extracao-e-Analise-de-Dados-da-API-do-YouTube-com-Azure/assets/128416211/824c2059-bade-45ba-ad9e-f45292dbd68d" width="400">
+</div>
+
+- Nesse dia, o canal com mais vídeos populares foi a CazéTv
+
+3 - Qual a melhor duração para o vídeo ser popular?
+  <div style="display: flex; flex-direction: row;">
+   <img src="https://github.com/RafaelViniciusBrambillaAlves/Extracao-e-Analise-de-Dados-da-API-do-YouTube-com-Azure/assets/128416211/7603d756-ac84-432e-b9b8-8e4235194324" width="400">
+</div>
+
+- Os vídeos mais populares tem menos de 15 minutos
 
 4 - Quais são os canais com mais visualização?
+  <div style="display: flex; flex-direction: row;">
+   <img src="https://github.com/RafaelViniciusBrambillaAlves/Extracao-e-Analise-de-Dados-da-API-do-YouTube-com-Azure/assets/128416211/e97f8244-c8e6-4695-af20-959e4291e65f" width="400">
+</div>
+
+
+- Nesse dia, o canal com mais visualizações foi o 이지금 IU Official
 
 5 - Quais são os números de visualização do vídeos mais populares?
+  <div style="display: flex; flex-direction: row;">
+   <img src="https://github.com/RafaelViniciusBrambillaAlves/Extracao-e-Analise-de-Dados-da-API-do-YouTube-com-Azure/assets/128416211/e4427086-127a-4b88-88e7-f4f3645ba5cb" width="400">
+</div>
+
+- Nesse dia a maioria dos vídeos populares tinham menos de 1M de visualizações
 
 
 ### Orquestração com Azure Data Factory
